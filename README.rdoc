@@ -1,0 +1,29 @@
+This app is homework from Day Nine of class (first day of week one). This was our first day really getting into Rails, so things are pretty simple right now.
+
+Here's the instructions from the Portal:
+Create a brand new rails app called "adventures"
+
+Create a custom controller with 2 actions: index & about
+
+Update each view / make it look good (html/css)
+
+Scaffold 2 resources (tables) with 3 attributes each:
+
+State (name, capital, population)
+
+Activity (name, cost, duration)
+
+Add 5 records to each table
+
+Add a new id column to each index view
+
+Create a route that takes the url "http://0.0.0.0:3000/ilovetocode" to your index page
+
+If you've got a handle on all that:
+Research how to add erb links, images, etc
+
+
+But I did a little more: 
+added Bootstrap CDN links, and styled using Bootstrap.
+I set the "ilovetocode" route to the welcome/about page,
+and set the welcome/index page as the root.
