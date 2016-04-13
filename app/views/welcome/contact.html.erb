@@ -1,0 +1,19 @@
+<style>
+	body {
+		color: <%= @color %>;
+	}
+</style>
+
+<div class="row center-it">
+	<div class="col-md-6 col-md-offset-3">
+		<h1>Change the Background Color!</h1>
+		<h3>C'mon, it'll be fun...</h3>
+	</div>
+</div>
+<div class="row center-it">
+	<% @colorsofthewind.each do |descr, color| %>
+		<div class="col-md-2">
+			<%= link_to color, contact_path(color: color), class: "btn btn-#{descr}" %>
+		</div>
+	<% end %>
+</div>

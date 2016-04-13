@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   root 'welcome#index'
 
-  get 'ilovecode' => 'welcome#about'
+  get 'ilovetocode' => 'welcome#about'
+
+  get 'contact' => 'welcome#contact'
 
   resources :activities
   resources :states

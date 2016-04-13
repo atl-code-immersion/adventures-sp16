@@ -2,6 +2,10 @@
 
 <h1>Listing Activities</h1>
 
+<p>
+  <%= link_to 'Create a New Activity', new_activity_path, class: "btn btn-primary" %>
+</p>
+
 <table class="table">
   <thead>
     <tr>
@@ -28,6 +32,11 @@
   </tbody>
 </table>
 
-<br>
+<div class="row mtop-40">
+  <% @adventureimages.each do |descr, img| %>
+    <div class="col-md-12">
+      <%= image_tag img, alt: descr, class: "img-responsive center-pics" %>
+    </div>
+  <% end %>
+</div>
 
-<%= link_to 'New Activity', new_activity_path %>
